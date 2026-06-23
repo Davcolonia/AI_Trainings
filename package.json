@@ -1,0 +1,21 @@
+{
+  "name": "restful-booker-playwright",
+  "version": "1.0.0",
+  "description": "Playwright API automation framework for Restful-Booker",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test tests/auth.spec.ts",
+    "test:booking": "playwright test tests/getBooking.spec.ts tests/createBooking.spec.ts tests/updateBooking.spec.ts tests/deleteBooking.spec.ts",
+    "test:health": "playwright test tests/healthCheck.spec.ts",
+    "report": "playwright show-report reports/html"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.1",
+    "@types/node": "^20.12.12",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.4.5"
+  }
+}

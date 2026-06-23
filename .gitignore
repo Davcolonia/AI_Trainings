@@ -1,0 +1,12 @@
+# Node dependency directory
+node_modules/
+
+# Test reports and outputs
+reports/
+playwright-report/
+test-results/
+
+# Environment files containing sensitive credentials/tokens
+.env
+.env.*
+!.env.example
